@@ -1,0 +1,13 @@
+.star-rating {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; /* distance from top */
+}
+
+.rated {
+  color: lightgreen;
+}
+
+.hovered {
+  color: yellow;
+}
