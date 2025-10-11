@@ -8,13 +8,14 @@ import ImageSlider from "./components/image-slider";
 import LoadMore from "./components/load-more";
 import TreeView from "./components/tree-view";
 import menus from "./components/tree-view/data";
+import QRCodeGenerator from "./components/qr-code-generator";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <TreeView menus={menus} />
+      <QRCodeGenerator />
     </>
   );
 }
