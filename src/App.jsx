@@ -9,13 +9,14 @@ import LoadMore from "./components/load-more";
 import TreeView from "./components/tree-view";
 import menus from "./components/tree-view/data";
 import QRCodeGenerator from "./components/qr-code-generator";
+import LightDarkMode from "./components/light-dark-mode";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <QRCodeGenerator />
+      <LightDarkMode />
     </>
   );
 }
