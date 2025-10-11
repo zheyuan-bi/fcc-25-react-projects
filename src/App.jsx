@@ -6,13 +6,15 @@ import RandomColor from "./components/random-color";
 import StarRating from "./components/star-rating";
 import ImageSlider from "./components/image-slider";
 import LoadMore from "./components/load-more";
+import TreeView from "./components/tree-view";
+import menus from "./components/tree-view/data";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <LoadMore />
+      <TreeView menus={menus} />
     </>
   );
 }
