@@ -12,13 +12,14 @@ import QRCodeGenerator from "./components/qr-code-generator";
 import LightDarkMode from "./components/light-dark-mode";
 import ScrollIndicator from "./components/scroll-indicator";
 import TabTest from "./components/tabs/tab-test";
+import ModalTest from "./components/modal-popup/modal-test";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <TabTest />
+      <ModalTest />
     </>
   );
 }
