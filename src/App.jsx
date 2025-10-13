@@ -13,13 +13,14 @@ import LightDarkMode from "./components/light-dark-mode";
 import ScrollIndicator from "./components/scroll-indicator";
 import TabTest from "./components/tabs/tab-test";
 import ModalTest from "./components/modal-popup/modal-test";
+import GithubProfileFinder from "./components/github-profile-finder";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <ModalTest />
+      <GithubProfileFinder />
     </>
   );
 }
