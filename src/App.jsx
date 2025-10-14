@@ -14,13 +14,14 @@ import ScrollIndicator from "./components/scroll-indicator";
 import TabTest from "./components/tabs/tab-test";
 import ModalTest from "./components/modal-popup/modal-test";
 import GithubProfileFinder from "./components/github-profile-finder";
+import SearchAutocomplete from "./components/search-autocomplete";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <GithubProfileFinder />
+      <SearchAutocomplete />
     </>
   );
 }
