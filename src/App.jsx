@@ -15,13 +15,14 @@ import TabTest from "./components/tabs/tab-test";
 import ModalTest from "./components/modal-popup/modal-test";
 import GithubProfileFinder from "./components/github-profile-finder";
 import SearchAutocomplete from "./components/search-autocomplete";
+import TicTacToe from "./components/tic-tac-toe";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <SearchAutocomplete />
+      <TicTacToe />
     </>
   );
 }

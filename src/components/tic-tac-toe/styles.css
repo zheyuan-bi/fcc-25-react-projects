@@ -1,0 +1,27 @@
+.tic-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.square {
+  border: 3px solid green;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(69, 68, 68);
+  color: aliceblue;
+  font-size: 30px;
+  padding: 0;
+  margin: 1px;
+}
+
+.won {
+  background-color: rgb(92, 147, 224);
+}
