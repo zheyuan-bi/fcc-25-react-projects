@@ -18,6 +18,11 @@ export default function TicTacToe() {
 
   const winnerPositions = getWinnerPositions(squares);
   const winner = winnerPositions ? (next === "X" ? "O" : "X") : null;
+  const status = winner
+    ? `Winner: ${winner}`
+    : squares.every((square) => square !== "")
+    ? "Draw"
+    : `Next player: ${next}`;
 
   function handleClick(i) {
     const newSquares = [...squares];
@@ -66,14 +71,8 @@ export default function TicTacToe() {
         </div>
       ))}
 
-      {winner ? (
-        <div>
-          <h3>{`Winner: ${winner}`}</h3>
-          <button onClick={reset}>Play Again</button>
-        </div>
-      ) : (
-        <h3>{`Next: ${next}`}</h3>
-      )}
+      <h3>{status}</h3>
+      {status.includes("Winner") || status.includes("Draw") ? <button onClick={reset}>Play Again</button> : null}
     </div>
   );
 }

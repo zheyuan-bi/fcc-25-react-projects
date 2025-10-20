@@ -8,8 +8,6 @@ export default function LightDarkMode() {
     setTheme(theme === "light" ? "dark" : "light");
   }
 
-  console.log(theme);
-
   return (
     <>
       <div className="container" data-theme={theme}>

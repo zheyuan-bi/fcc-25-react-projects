@@ -11,10 +11,7 @@ export default function Accordion() {
   const [enableMultiSelect, setEnableMultiSelect] = useState(false);
   const [multipleSelectedIds, setMultipleSelectedIds] = useState([]);
 
-  console.log(selected, multipleSelectedIds, enableMultiSelect);
-
   function handleSingleSelection(id) {
-    console.log("single");
     id === selected ? setSelected(null) : setSelected(id);
   }
 
