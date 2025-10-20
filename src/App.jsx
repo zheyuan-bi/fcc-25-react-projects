@@ -18,15 +18,14 @@ import SearchAutocomplete from "./components/search-autocomplete";
 import TicTacToe from "./components/tic-tac-toe";
 import FeatureFlags from "./components/feature-flag";
 import FeatureFlagGlobalState from "./components/feature-flag/context";
+import UseFetchHookTest from "./components/useFetch/test";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <FeatureFlagGlobalState>
-        <FeatureFlags />
-      </FeatureFlagGlobalState>
+      <UseFetchHookTest />
     </>
   );
 }
