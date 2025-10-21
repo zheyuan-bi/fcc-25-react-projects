@@ -20,13 +20,14 @@ import FeatureFlags from "./components/feature-flag";
 import FeatureFlagGlobalState from "./components/feature-flag/context";
 import UseFetchHookTest from "./components/useFetch/test";
 import UseOnClickOutsideTest from "./components/use-outside-click/test";
+import UseWindowResizeTest from "./components/use-window-resize/test";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <UseOnClickOutsideTest />
+      <UseWindowResizeTest />
     </>
   );
 }
