@@ -1,0 +1,25 @@
+button {
+  opacity: 0.8;
+  font-size: 27px;
+  position: fixed;
+  right: 20px;
+  padding: 4px 16px;
+  transition: opacity ease-in-out 0.3s;
+  border-radius: 25%;
+}
+
+button.isHidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+button.downButton {
+  background-color: rgb(234, 231, 231);
+  top: 20px;
+}
+
+button.upButton {
+  background-color: rgb(41, 40, 40);
+  color: white;
+  bottom: 20px;
+}
