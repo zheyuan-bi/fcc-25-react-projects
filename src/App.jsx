@@ -22,13 +22,14 @@ import UseFetchHookTest from "./components/useFetch/test";
 import UseOnClickOutsideTest from "./components/use-outside-click/test";
 import UseWindowResizeTest from "./components/use-window-resize/test";
 import ScrollToTop from "./components/scroll-to-top";
+import ScrollToSection from "./components/scroll-to-top/scroll-to-section";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <ScrollToTop />
+      <ScrollToSection />
     </>
   );
 }
